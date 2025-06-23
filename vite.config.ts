@@ -47,12 +47,12 @@ export default defineConfig({
         manualChunks: {
           vendor: ['vue', 'vue-router', 'pinia'],
           charts: ['chart.js', 'vue-chartjs'],
-          maps: ['leaflet', 'vue3-leaflet']
+          maps: ['leaflet', '@vue-leaflet/vue-leaflet']
         }
       }
     }
   },
   optimizeDeps: {
-    exclude: ['vue3-leaflet']
+    exclude: ['@vue-leaflet/vue-leaflet']
   }
 }) 
